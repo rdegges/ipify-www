@@ -1,0 +1,152 @@
+.header {
+  min-height: 9.4em;
+}
+
+.header h1 {
+  font-size: 2.5em;
+}
+
+.header h1, .header h3 {
+  color: #777;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.navbar {
+  margin-bottom: 0em;
+  border: 0em;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.navbar li {
+  color: #777;
+  font-size: 1.5em;
+  margin-top: 5em;
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.why li {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+thead td {
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  font-size: 1.3em;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+#yourip {
+  font: monospace;
+}
+
+code {
+  color: #000;
+}
+
+#tryit {
+  margin-bottom: 2em;
+}
+
+.jumbotron p {
+  font-size: 1em;
+  margin: 0em;
+  color: #202020;
+}
+
+.jumbotron pre {
+  margin-top: 2em;
+}
+
+.try, .api {
+  background-color: #f2f2f2;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+  color: #74cfae;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.try h2, .api h2 {
+  color: #74cfae;
+}
+
+.why {
+  background-color: #4e4e4e;
+}
+
+.why h2 {
+  color: #f2f2f2;
+}
+
+.why p {
+  color: #74cfae;
+}
+
+.why li {
+  color: #f2f2f2;
+}
+
+.examples {
+  background-color: #74cfae;
+}
+
+.examples p, .examples li {
+  color: #f2f2f2;
+}
+
+.examples a, .examples a:link, .examples a:hover, .examples a:active, .examples a:visited {
+  color: #4e4e4e;
+}
+
+.examples h2, .examples h3 {
+  color: #4e4e4e;
+}
+
+.examples h3 {
+  font-weight: bold;
+}
+
+.examples .prettyprint {
+  padding: 0em 1em !important;
+  margin: 0em 3em;
+}
+
+.examples {
+  padding-bottom: 2em;
+}
+
+footer {
+  background-color: #f2f2f2;
+  margin: 0em;
+  padding: 0em;
+}
+
+footer p {
+  text-align: center;
+  margin: 0em 1em;;
+  font-size: 1em;
+  border-top: 2px solid #f2f2f2;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
