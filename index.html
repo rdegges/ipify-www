@@ -197,6 +197,10 @@ print 'My public IP address is:', ip</pre>
 ip = open("http://api.ipify.org").read
 puts "My public IP Address is: " + ip</pre>
 
+        <h3>VB.NET</h3>
+        <pre class="prettyprint">Dim client As New System.Net.WebClient
+Dim ip as String =  client.DownloadString("http://api.ipify.org")</pre>
+
         <h3>NodeJS</h3>
         <pre class="prettyprint">var http = require('http');
 
