@@ -233,13 +233,13 @@ http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
 
         <h3>Arduino</h3>
         <pre class="prettyprint">if (client.connect("api.ipify.org", 80)) {
-          Serial.println("connected");
-          client.println("GET / HTTP/1.0");
-          client.println("Host: api.ipify.org");
-          client.println();
-        } else {
-          Serial.println("connection failed");
-        }</pre>
+    Serial.println("connected");
+    client.println("GET / HTTP/1.0");
+    client.println("Host: api.ipify.org");
+    client.println();
+} else {
+    Serial.println("connection failed");
+}</pre>
       </div>
     </div>
     <footer>
