@@ -2,11 +2,8 @@
  * Global styles.
  */
 body, p, h1, h2, h3, h4, h5, h6 {
-  color: #a2a0a0;
   color: #4c4c4c;
-  font-family: 'Josefin Slab', serif;
   font-family: 'Josefin Sans', sans-serif;
-  /*font-family: 'Halant', serif;*/
 }
 
 body {
@@ -14,15 +11,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /*color: #777;*/
   color: #a2a0a0 !important;
-  /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-family: 'Josefin Sans', sans-serif;
-  /*
-  font-family: 'Ubuntu', sans-serif;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-family: 'Raleway', sans-serif !important;
-  */
   line-height: 1.1;
 }
 
@@ -101,16 +91,6 @@ header .header-logo div {
 }
 
 /*
-header .yourip {
-  color: #a2a0a0 !important;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 100;
-  line-height: 1.1;
-  font-size: 1.5em;
-}
-*/
-
-/*
  * Give it a try styles.
  */
 .try {
@@ -118,8 +98,6 @@ header .yourip {
 }
 
 .try .jumbotron p {
-  /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 200;*/
   margin-bottom: 2em;
 }
 
