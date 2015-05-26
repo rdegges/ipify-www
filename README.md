@@ -34,8 +34,8 @@ $ python -m SimpleHTTPServer
 ```
 
 The above commands will clone the repository down locally, then start a local
-web server at http://localhost:8000  Once this web server is started, you can
-visit it in your browser to test things out =)
+web server at [http://localhost:8000][]  Once this web server is started, you
+can visit it in your browser to test things out =)
 
 
 ## Contributing
@@ -58,3 +58,4 @@ visually inspect CSS changes / etc.
 
 
   [ipify]: http://www.ipify.org/ "ipify - A Simple IP Address API"
+  [http://localhost:8000]: http://localhost:8000 "Localhost"
