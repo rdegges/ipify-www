@@ -213,6 +213,18 @@ require("open-uri")
 ip = open("https://api.ipify.org").read
 puts "My public IP Address is: " + ip</code></pre>
 
+              <h3>PHP</h3>
+              <pre><code class="language-php">
+<?php
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://api.ipify.org");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    echo "My public IP address is: " . $response;
+?></code></pre>
+
               <h3>VB.NET</h3>
               <pre><code class="language-csharp">
 Dim client as New System.Net.WebClient
