@@ -225,6 +225,16 @@ puts "My public IP Address is: " + ip</code></pre>
     echo "My public IP address is: " . $response;
 ?&gt;</code></pre>
 
+              <h3>Perl</h3>
+              <pre><code class="language-perl">
+use strict;
+use warnings;
+use LWP::UserAgent;
+
+my $ua = new LWP::UserAgent();
+my $ip = $ua-&gt;get('https://api.ipify.org')-&gt;content;
+print 'My public IP address is: '. $ip;</code></pre>
+
               <h3>VB.NET</h3>
               <pre><code class="language-csharp">
 Dim client as New System.Net.WebClient
