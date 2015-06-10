@@ -216,13 +216,8 @@ puts "My public IP Address is: " + ip</code></pre>
               <h3>PHP</h3>
               <pre><code class="language-php">
 &lt;?php
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "https://api.ipify.org");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
-    curl_close($ch);
-
-    echo "My public IP address is: " . $response;
+    $ip = file_get_contents('https://api.ipify.org');
+    echo "My public IP address is: " . $ip;
 ?&gt;</code></pre>
 
               <h3>Perl</h3>
