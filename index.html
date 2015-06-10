@@ -208,9 +208,9 @@ print 'My public IP address is:', ip</code></pre>
 
               <h3>Ruby</h3>
               <pre><code class="language-ruby">
-require("open-uri")
+require "net/http"
 
-ip = open("https://api.ipify.org").read
+ip = Net::HTTP.get(URI("https://api.ipify.org"))
 puts "My public IP Address is: " + ip</code></pre>
 
               <h3>PHP</h3>
