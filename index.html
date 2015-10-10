@@ -282,6 +282,12 @@ namespace Ipify.Examples {
     }
 }</code></pre>
 
+              <h3>Objective-C</h3>
+              <pre><code class="objectivec">
+NSURL *url = [NSURL URLWithString:@"https://api.ipify.org/"];
+NSString *ipAddress = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+NSLog(@"My public IP address is: %@", ipAddress);</code></pre>
+
               <h3>Arduino</h3>
               <pre><code class="language-clike">
 if (client.connect("api.ipify.org", 80)) {
