@@ -282,6 +282,11 @@ namespace Ipify.Examples {
     }
 }</code></pre>
 
+              <h3>PowerShell</h3>
+              <pre><code class="language-powershell">
+$ip = Invoke-WebRequest -Uri https://api.ipify.org?format=json | ConvertFrom-Json
+"My public IP address is: {0}" -f $ip.ip</code></pre>
+
               <h3>Objective-C</h3>
               <pre><code class="objectivec">
 NSURL *url = [NSURL URLWithString:@"https://api.ipify.org/"];
