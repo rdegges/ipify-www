@@ -245,6 +245,11 @@ http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
   });
 });</code></pre>
 
+              <h3>Scala</h3>
+              <pre><code class="language-scala">
+val addr = scala.io.Source.fromURL("https://api.ipify.org").mkString
+println(s"My public IP address is: $addr")</code></pre>
+
               <h3>Javascript</h3>
               <pre><code class="language-javascript">
 &lt;script type="application/javascript"&gt;
