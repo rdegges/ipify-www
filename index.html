@@ -8,6 +8,7 @@
     <meta name="description" content="ipify is a simple public IP address API, easy enough to integrate into any application in seconds.">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -191,15 +192,13 @@
                 <a href="mailto:r@rdegges.com" title="Randall Degges' Email">Email me!</a>
               </p>
               <h3>Bash</h3>
-              <pre><code class="language-bash">
-#!/bin/bash
+              <pre><code class="language-bash">#!/bin/bash
 
 ip=$(curl -s https://api.ipify.org)
 echo "My public IP address is: $ip"</code></pre>
 
               <h3>Python</h3>
-              <pre><code class="language-python">
-# This example requires the requests library be installed.  You can learn more
+              <pre><code class="language-python"># This example requires the requests library be installed.  You can learn more
 # about the Requests library here: http://docs.python-requests.org/en/latest/
 from requests import get
 
@@ -207,22 +206,19 @@ ip = get('https://api.ipify.org').text
 print 'My public IP address is:', ip</code></pre>
 
               <h3>Ruby</h3>
-              <pre><code class="language-ruby">
-require "net/http"
+              <pre><code class="language-ruby">require "net/http"
 
 ip = Net::HTTP.get(URI("https://api.ipify.org"))
 puts "My public IP Address is: " + ip</code></pre>
 
               <h3>PHP</h3>
-              <pre><code class="language-php">
-&lt;?php
+              <pre><code class="language-php">&lt;?php
     $ip = file_get_contents('https://api.ipify.org');
     echo "My public IP address is: " . $ip;
 ?&gt;</code></pre>
 
               <h3>Perl</h3>
-              <pre><code class="language-perl">
-use strict;
+              <pre><code class="language-perl">use strict;
 use warnings;
 use LWP::UserAgent;
 
@@ -231,13 +227,11 @@ my $ip = $ua-&gt;get('https://api.ipify.org')-&gt;content;
 print 'My public IP address is: '. $ip;</code></pre>
 
               <h3>VB.NET</h3>
-              <pre><code class="language-csharp">
-Dim client as New System.Net.WebClient
+              <pre><code class="language-csharp">Dim client as New System.Net.WebClient
 Dim ip as String = client.DownloadString("https://api.ipify.org")</code></pre>
 
               <h3>NodeJS</h3>
-              <pre><code class="language-javascript">
-var http = require('http');
+              <pre><code class="language-javascript">var http = require('http');
 
 http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
   resp.on('data', function(ip) {
@@ -246,13 +240,11 @@ http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
 });</code></pre>
 
               <h3>Scala</h3>
-              <pre><code class="language-scala">
-val addr = scala.io.Source.fromURL("https://api.ipify.org").mkString
+              <pre><code class="language-scala">val addr = scala.io.Source.fromURL("https://api.ipify.org").mkString
 println(s"My public IP address is: $addr")</code></pre>
 
               <h3>Javascript</h3>
-              <pre><code class="language-javascript">
-&lt;script type="application/javascript"&gt;
+              <pre><code class="language-javascript">&lt;script type="application/javascript"&gt;
   function getIP(json) {
     document.write("My public IP address is: ", json.ip);
   }
@@ -261,8 +253,7 @@ println(s"My public IP address is: $addr")</code></pre>
 &lt;script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"&gt;&lt;/script&gt;</code></pre>
 
               <h3>jQuery</h3>
-              <pre><code class="language-javascript">
-&lt;script type="application/javascript"&gt;
+              <pre><code class="language-javascript">&lt;script type="application/javascript"&gt;
   $(function() {
     $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
       function(json) {
@@ -273,8 +264,7 @@ println(s"My public IP address is: $addr")</code></pre>
 &lt;/script&gt;</code></pre>
 
               <h3>C#</h3>
-              <pre><code class="language-java">
-using System;
+              <pre><code class="language-java">using System;
 using System.Net;
 
 namespace Ipify.Examples {
@@ -288,13 +278,11 @@ namespace Ipify.Examples {
 }</code></pre>
 
               <h3>PowerShell</h3>
-              <pre><code class="language-powershell">
-$ip = Invoke-WebRequest -Uri https://api.ipify.org
+              <pre><code class="language-powershell">$ip = Invoke-WebRequest -Uri https://api.ipify.org
 "My public IP address is: $ip"</code></pre>
 
               <h3>PureBasic</h3>
-              <pre><code class="language-basic">
-InitNetwork()
+              <pre><code class="language-basic">InitNetwork()
 *Buffer = ReceiveHTTPMemory("https://api.ipify.org?format=json")
 If *Buffer
   ParseJSON(0, PeekS(*Buffer, MemorySize(*Buffer), #PB_UTF8))
@@ -303,18 +291,15 @@ If *Buffer
 EndIf</code></pre>
 
               <h3>LiveCode</h3>
-              <pre><code class="language-ruby">
-put "My public IP address is" &amp;&amp; url "https://api.ipify.org"</code></pre>
+              <pre><code class="language-ruby">put "My public IP address is" &amp;&amp; url "https://api.ipify.org"</code></pre>
 
               <h3>Objective-C</h3>
-              <pre><code class="objectivec">
-NSURL *url = [NSURL URLWithString:@"https://api.ipify.org/"];
+              <pre><code class="objectivec">NSURL *url = [NSURL URLWithString:@"https://api.ipify.org/"];
 NSString *ipAddress = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
 NSLog(@"My public IP address is: %@", ipAddress);</code></pre>
 
               <h3>Arduino</h3>
-              <pre><code class="language-clike">
-if (client.connect("api.ipify.org", 80)) {
+              <pre><code class="language-clike">if (client.connect("api.ipify.org", 80)) {
     Serial.println("connected");
     client.println("GET / HTTP/1.0");
     client.println("Host: api.ipify.org");
@@ -420,11 +405,11 @@ if (client.connect("api.ipify.org", 80)) {
           Built with &#10084; by <a href="http://www.rdegges.com/"
             title="Randall Degges">Randall Degges</a> (<a
             href="https://twitter.com/rdegges" title="Randall Degges on
-            Twitter">@rdegges</a>). Images by <a
+            Twitter">@rdegges</a>). Logo by <a
             href="http://www.samanthadegges.com/" title="Samantha
             Degges">Samantha Degges</a> (<a
             href="https://twitter.com/samanthadegges" title="Samantha Degges on
-            Twitter">@samanthadegges</a>).
+            Twitter">@samanthadegges</a>). <a href="https://gratipay.com/~rdegges/">Donate</a>.
         </p>
       </footer>
     </div>
