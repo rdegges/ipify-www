@@ -239,6 +239,12 @@ http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
   });
 });</code></pre>
 
+              <h3>Racket</h3>
+              <pre><code class="language-scheme">(require net/url)
+
+(define ip (port->string (get-pure-port (string->url "https://api.ipify.org"))))
+(printf "My public IP address is: ~a" ip)</code></pre>
+
               <h3>Scala</h3>
               <pre><code class="language-scala">val addr = scala.io.Source.fromURL("https://api.ipify.org").mkString
 println(s"My public IP address is: $addr")</code></pre>
