@@ -292,8 +292,8 @@ namespace Ipify.Examples {
 }</code></pre>
 
               <h3>PowerShell</h3>
-              <pre><code class="language-powershell">$ip = Invoke-WebRequest -Uri https://api.ipify.org
-"My public IP address is: $ip"</code></pre>
+              <pre><code class="language-powershell">$ip = Invoke-RestMethod -Uri 'https://api.ipify.org?format=json'
+"My public IP address is: $($ip.ip)"</code></pre>
 
               <h3>PureBasic</h3>
               <pre><code class="language-basic">InitNetwork()
