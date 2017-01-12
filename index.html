@@ -203,7 +203,7 @@ echo "My public IP address is: $ip"</code></pre>
 from requests import get
 
 ip = get('https://api.ipify.org').text
-print 'My public IP address is:', ip</code></pre>
+print('My public IP address is: {}'.format(ip))</code></pre>
 
               <h3>Ruby</h3>
               <pre><code class="language-ruby">require "net/http"
