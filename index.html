@@ -310,6 +310,9 @@ namespace Ipify.Examples {
               <pre><code class="language-powershell">$ip = Invoke-RestMethod -Uri 'https://api.ipify.org?format=json'
 "My public IP address is: $($ip.ip)"</code></pre>
 
+              <h3>Lua</h3>
+              <pre><code class="language-lua">http.Fetch("https://api.ipify.org", function(body) print("My ip is: " .. body ) end</code></pre>
+
               <h3>PureBasic</h3>
               <pre><code class="language-basic">InitNetwork()
 *Buffer = ReceiveHTTPMemory("https://api.ipify.org?format=json")
