@@ -234,9 +234,15 @@ my $ua = new LWP::UserAgent();
 my $ip = $ua-&gt;get('https://api.ipify.org')-&gt;content;
 print 'My public IP address is: '. $ip;</code></pre>
 
+              <h3>C#</h3>
+              <pre><code class="language-csharp">var httpClient = new HttpClient();
+var ip = await httpClient.GetStringAsync("https://api.ipify.org");
+Console.WriteLine($"My public IP address is: {ip}");</code></pre>
+              
               <h3>VB.NET</h3>
-              <pre><code class="language-csharp">Dim client as New System.Net.WebClient
-Dim ip as String = client.DownloadString("https://api.ipify.org")</code></pre>
+              <pre><code class="language-csharp">Dim httpClient As New System.Net.Http.HttpClient
+Dim ip As String = Await httpClient.GetStringAsync("https://api.ipify.org")
+Console.WriteLine($"My public IP address is: {ip}")</code></pre>
 
               <h3>NodeJS</h3>
               <pre><code class="language-javascript">var http = require('http');
@@ -291,20 +297,6 @@ println(s"My public IP address is: $addr")</code></pre>
     );
   });
 &lt;/script&gt;</code></pre>
-
-              <h3>C#</h3>
-              <pre><code class="language-java">using System;
-using System.Net;
-
-namespace Ipify.Examples {
-    class Program {
-        public static void Main (string[] args) {
-            WebClient webClient = new WebClient();
-            string publicIp = webClient.DownloadString("https://api.ipify.org");
-            Console.WriteLine("My public IP Address is: {0}", publicIp);
-        }
-    }
-}</code></pre>
 
               <h3>PowerShell</h3>
               <pre><code class="language-powershell">$ip = Invoke-RestMethod -Uri 'https://api.ipify.org?format=json'
