@@ -306,6 +306,11 @@ namespace Ipify.Examples {
     }
 }</code></pre>
 
+              <h3>nim</h3>
+              <pre><code class="language-nim">import HttpClient
+var ip = newHttpClient().getContent("http://api.ipify.org")
+echo("My public IP address is: ", ip)</code></pre>
+
               <h3>PowerShell</h3>
               <pre><code class="language-powershell">$ip = Invoke-RestMethod -Uri 'https://api.ipify.org?format=json'
 "My public IP address is: $($ip.ip)"</code></pre>
