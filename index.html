@@ -234,9 +234,15 @@ my $ua = new LWP::UserAgent();
 my $ip = $ua-&gt;get('https://api.ipify.org')-&gt;content;
 print 'My public IP address is: '. $ip;</code></pre>
 
+              <h3>C#</h3>
+              <pre><code class="language-csharp">var httpClient = new HttpClient();
+var ip = await httpClient.GetStringAsync("https://api.ipify.org");
+Console.WriteLine($"My public IP address is: {ip}");</code></pre>
+
               <h3>VB.NET</h3>
-              <pre><code class="language-csharp">Dim client as New System.Net.WebClient
-Dim ip as String = client.DownloadString("https://api.ipify.org")</code></pre>
+              <pre><code class="language-csharp">Dim httpClient As New System.Net.Http.HttpClient
+Dim ip As String = Await httpClient.GetStringAsync("https://api.ipify.org")
+Console.WriteLine($"My public IP address is: {ip}")</code></pre>
 
               <h3>NodeJS</h3>
               <pre><code class="language-javascript">var http = require('http');
@@ -308,7 +314,7 @@ namespace Ipify.Examples {
 
               <h3>nim</h3>
               <pre><code class="language-nim">import HttpClient
-var ip = newHttpClient().getContent("http://api.ipify.org")
+var ip = newHttpClient().getContent("https://api.ipify.org")
 echo("My public IP address is: ", ip)</code></pre>
 
               <h3>PowerShell</h3>
