@@ -6,9 +6,9 @@ python: 3.5
 install: pip install awscli
 script:
 - aws s3 sync --exclude '.git/*' --exclude 'README.md' --exclude '.travis.yml' --exclude
-  '.gitignore' --exclude 'upload.sh' --acl public-read --delete . s3://www.ipify.org
+  '.gitignore' --exclude 'upload.sh' --acl public-read --delete . s3://ipify-www
 - aws configure set preview.cloudfront true
-- aws cloudfront create-invalidation --distribution-id E1Y3OJ1AD2SW62 --paths '/*'
+- aws cloudfront create-invalidation --distribution-id E1JHMKBOJ3RGMV --paths '/*'
 env:
   global:
   - secure: a6cRRb5CaCR8rMHhRFAlKwc608iWjh2ewg2xLdTs/fRXVKhW0fOvDW34ATBEZ2GTfiYp9k9M5jLRzHYo4jzLAaxRjIX4mWrXORWGA3pA4vWVImjqwCO/DluM7EgPZR4Cw4G6OkWcDsKfiVZvhoGhP6FWH5FS4JJ5QBNP1Qp/9Y0=
