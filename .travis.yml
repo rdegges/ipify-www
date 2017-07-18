@@ -11,5 +11,5 @@ script:
 - aws cloudfront create-invalidation --distribution-id E1JHMKBOJ3RGMV --paths '/*'
 env:
   global:
-  - secure: a6cRRb5CaCR8rMHhRFAlKwc608iWjh2ewg2xLdTs/fRXVKhW0fOvDW34ATBEZ2GTfiYp9k9M5jLRzHYo4jzLAaxRjIX4mWrXORWGA3pA4vWVImjqwCO/DluM7EgPZR4Cw4G6OkWcDsKfiVZvhoGhP6FWH5FS4JJ5QBNP1Qp/9Y0=
-  - secure: WksM/gwqKtr3+YokAI3kb6YOoHm7n18R6y7f+/UkUITuVE7iCfPlqtBhLrX1GUcIb7zLPFsK+ZIvdPyqPLDDKZD6OuzvWD7y57CGiTFhxHXfnZbYwq6sxwYEsI777mNmoYHloMEhY8RZrvP0MEFI9e+P7tYQhE9YaPnlGrIi/Cg=
+  - secure: W28658ftQrE1Mfb/V6lKRwGT4pUcrRn0cH17WLvMFP6ypXIPXTU9S28OkGh3TpaZ+wrESqFVr5lQlph4Zu8sZe+bl50fj9VVxbsMIouHGxsZdcQd9wl9HEw9RdVRz/u+eDgrTmiRZ0z6J8BzIxUr9PjdCMoEpOx1CsJWYoVhU8M=
+  - secure: cLrggTASe/mJhjyBSS5QJqj1F7x8qoVPhOgT6l5pNkUrdR0MSlUmWTtAJd5gkYOclbDwpqmYR04hbJ5kwdug3DIrTfff4AYf90LnxzxH8Vhsh1dOtUllp7/b8SBr9L9CvZWUYIVX4guI4czrzcIylJhFSnblWOu+OABmd9f5hIk=
